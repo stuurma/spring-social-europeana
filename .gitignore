@@ -4,4 +4,11 @@
 *.jar
 *.war
 *.ear
+
+# generated files
 /target
+
+# Eclipse project files
+.classpath
+.project
+.settings/
