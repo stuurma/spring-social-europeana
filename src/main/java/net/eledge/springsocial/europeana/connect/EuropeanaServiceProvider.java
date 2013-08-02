@@ -10,8 +10,8 @@ public class EuropeanaServiceProvider extends AbstractOAuth2ServiceProvider<Euro
 
 	public EuropeanaServiceProvider(String clientId, String clientSecret) {
 		super(new OAuth2Template(clientId, clientSecret, 
-				"https://graph.facebook.com/oauth/authorize",
-				"https://graph.facebook.com/oauth/access_token"));
+				"http://europeana.eu/api/oauth/authorize",
+				"http://europeana.eu/api/oauth/token"));
 	}
 	
 	@Override
