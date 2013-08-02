@@ -1,5 +1,5 @@
 package net.eledge.springsocial.europeana.api;
 
-public interface FavoriteOperations {
+public interface SavedItemsOperations {
 
 }

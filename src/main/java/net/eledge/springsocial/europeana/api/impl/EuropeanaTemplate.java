@@ -1,13 +1,13 @@
 package net.eledge.springsocial.europeana.api.impl;
 
 import net.eledge.springsocial.europeana.api.Europeana;
-import net.eledge.springsocial.europeana.api.FavoriteOperations;
+import net.eledge.springsocial.europeana.api.SavedItemsOperations;
 
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 
 public class EuropeanaTemplate extends AbstractOAuth2ApiBinding implements Europeana {
 
-	private FavoriteOperations favoriteOperations;
+	private SavedItemsOperations savedItemsOperations;
 
 	public EuropeanaTemplate() {
 		super();
@@ -19,12 +19,12 @@ public class EuropeanaTemplate extends AbstractOAuth2ApiBinding implements Europ
 		initSubApis();
 	}
 
-	public FavoriteOperations favoriteOperations() {
-		return favoriteOperations;
+	public SavedItemsOperations savedItemsOperations() {
+		return savedItemsOperations;
 	}
 
 	private void initSubApis() {
-		this.favoriteOperations = new FavoriteTemplate(getRestTemplate(), isAuthorized());
+		this.savedItemsOperations = new SavedItemsTemplate(getRestTemplate(), isAuthorized());
 	}
 
 }
