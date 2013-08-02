@@ -20,7 +20,7 @@ public class EuropeanaAdaptor implements ApiAdapter<Europeana> {
 
 	public UserProfile fetchUserProfile(Europeana api) {
 		// TODO Auto-generated method stub
-		return null;
+		return UserProfile.EMPTY;
 	}
 
 	public void updateStatus(Europeana api, String message) {
