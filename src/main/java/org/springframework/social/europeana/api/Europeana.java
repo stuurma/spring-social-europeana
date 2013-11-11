@@ -1,4 +1,4 @@
-package net.eledge.springsocial.europeana.api;
+package org.springframework.social.europeana.api;
 
 import org.springframework.social.ApiBinding;
 

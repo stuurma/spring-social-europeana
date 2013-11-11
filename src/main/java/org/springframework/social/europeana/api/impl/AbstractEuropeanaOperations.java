@@ -1,4 +1,4 @@
-package net.eledge.springsocial.europeana.api.abstracts;
+package org.springframework.social.europeana.api.impl;
 
 import java.net.URI;
 
@@ -21,7 +21,7 @@ public abstract class AbstractEuropeanaOperations {
 		this.isAuthorized = isAuthorized;
 	}
 
-	protected void requireAuthorization() {
+	protected void requireUserAuthorization() {
 		if (!isAuthorized) {
 			throw new MissingAuthorizationException();
 		}

@@ -1,8 +1,7 @@
-package net.eledge.springsocial.europeana.connect;
-
-import net.eledge.springsocial.europeana.api.Europeana;
+package org.springframework.social.europeana.connect;
 
 import org.springframework.social.connect.support.OAuth2ConnectionFactory;
+import org.springframework.social.europeana.api.Europeana;
 
 public class EuropeanaConnectionFactory extends OAuth2ConnectionFactory<Europeana> {
 

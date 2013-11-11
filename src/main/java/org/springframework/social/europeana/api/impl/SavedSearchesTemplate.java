@@ -1,8 +1,6 @@
-package net.eledge.springsocial.europeana.api.impl;
+package org.springframework.social.europeana.api.impl;
 
-import net.eledge.springsocial.europeana.api.SavedSearchesOperations;
-import net.eledge.springsocial.europeana.api.abstracts.AbstractEuropeanaOperations;
-
+import org.springframework.social.europeana.api.SavedSearchesOperations;
 import org.springframework.web.client.RestTemplate;
 
 public class SavedSearchesTemplate extends AbstractEuropeanaOperations implements SavedSearchesOperations {

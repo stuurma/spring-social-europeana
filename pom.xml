@@ -1,20 +1,50 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.eledge</groupId>
-  <artifactId>spring-social-europeana</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>spring-social-europeana</name>
-  <url>https://github.com/eLedge/spring-social-europeana</url>
-  <organization>
-  	<name>eLedge.net</name>
-  	<url>www.eledge.net</url>
-  </organization>
-  
-  <dependencies>
-  	<dependency>
-  		<groupId>org.springframework.social</groupId>
-  		<artifactId>spring-social-core</artifactId>
-  		<version>1.0.3.RELEASE</version>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.eledge</groupId>
+	<artifactId>spring-social-europeana</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-social-europeana</name>
+	<packaging>jar</packaging>
+	<url>https://github.com/eLedge/spring-social-europeana</url>
+	<description>Spring Social plugin implementation for the Europeana API (MyEuropeana methods).</description>
+	<organization>
+		<name>eLedge.net</name>
+		<url>www.eledge.net</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>European Union Public Licence (EUPL) v1.1</name>
+			<url>https://joinup.ec.europa.eu/software/page/eupl</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<scm>
+		<connection>scm:git:git@github.com:eLedge/spring-social-europeana.git</connection>
+		<developerConnection>scm:git:git@github.com:eLedge/spring-social-europeana.git</developerConnection>
+		<url>git@github.com:eLedge/spring-social-europeana.git</url>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-core</artifactId>
+			<version>1.0.3.RELEASE</version>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-test</artifactId>
+            <version>1.0.3.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+            <scope>test</scope>
+        </dependency>
+	</dependencies>
+
 </project>

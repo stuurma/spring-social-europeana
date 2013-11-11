@@ -1,11 +1,10 @@
-package net.eledge.springsocial.europeana.api.impl;
+package org.springframework.social.europeana.api.impl;
 
-import net.eledge.springsocial.europeana.api.Europeana;
-import net.eledge.springsocial.europeana.api.ProfileOperations;
-import net.eledge.springsocial.europeana.api.SavedItemsOperations;
-import net.eledge.springsocial.europeana.api.SavedSearchesOperations;
-import net.eledge.springsocial.europeana.api.SocialTagsOperations;
-
+import org.springframework.social.europeana.api.Europeana;
+import org.springframework.social.europeana.api.ProfileOperations;
+import org.springframework.social.europeana.api.SavedItemsOperations;
+import org.springframework.social.europeana.api.SavedSearchesOperations;
+import org.springframework.social.europeana.api.SocialTagsOperations;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 
 public class EuropeanaTemplate extends AbstractOAuth2ApiBinding implements Europeana {

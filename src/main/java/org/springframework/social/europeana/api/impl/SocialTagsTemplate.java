@@ -1,8 +1,6 @@
-package net.eledge.springsocial.europeana.api.impl;
+package org.springframework.social.europeana.api.impl;
 
-import net.eledge.springsocial.europeana.api.SocialTagsOperations;
-import net.eledge.springsocial.europeana.api.abstracts.AbstractEuropeanaOperations;
-
+import org.springframework.social.europeana.api.SocialTagsOperations;
 import org.springframework.web.client.RestTemplate;
 
 public class SocialTagsTemplate extends AbstractEuropeanaOperations implements SocialTagsOperations {

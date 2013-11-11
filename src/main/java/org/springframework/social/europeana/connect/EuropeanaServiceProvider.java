@@ -1,8 +1,7 @@
-package net.eledge.springsocial.europeana.connect;
+package org.springframework.social.europeana.connect;
 
-import net.eledge.springsocial.europeana.api.Europeana;
-import net.eledge.springsocial.europeana.api.impl.EuropeanaTemplate;
-
+import org.springframework.social.europeana.api.Europeana;
+import org.springframework.social.europeana.api.impl.EuropeanaTemplate;
 import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 import org.springframework.social.oauth2.OAuth2Template;
 

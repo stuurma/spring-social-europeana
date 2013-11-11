@@ -1,9 +1,7 @@
-package net.eledge.springsocial.europeana.api.impl;
+package org.springframework.social.europeana.api.impl;
 
+import org.springframework.social.europeana.api.SavedItemsOperations;
 import org.springframework.web.client.RestTemplate;
-
-import net.eledge.springsocial.europeana.api.SavedItemsOperations;
-import net.eledge.springsocial.europeana.api.abstracts.AbstractEuropeanaOperations;
 
 public class SavedItemsTemplate extends AbstractEuropeanaOperations implements SavedItemsOperations {
 	
