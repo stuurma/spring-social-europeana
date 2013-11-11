@@ -1,0 +1,16 @@
+{
+   "apikey":"testing",
+   "action":"/v2/user/profile.json",
+   "success":true,
+   "email":"example@europeana.eu",
+   "userName":"example",
+   "registrationDate":1362351600000,
+   "firstName":"John",
+   "lastName":"Doe",
+   "company":"eLedge",
+   "country":"Netherlands",
+   "fieldOfWork":"Individual developer",
+   "nrOfSavedItems":1,
+   "nrOfSavedSearches":0,
+   "nrOfSocialTags":4
+}

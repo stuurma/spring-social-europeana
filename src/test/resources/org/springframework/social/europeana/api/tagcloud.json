@@ -1,0 +1,18 @@
+{
+    "apikey": "testing",
+    "action": "/user/tag.json",
+    "success": true,
+    "itemsCount": 2,
+    "totalResults": 2,
+    "items": [
+        {
+            "label": "leerdam",
+            "count": 2
+        },
+        {
+            "label": "gorinchem",
+            "count": 2
+        }
+    ],
+    "username": "example"
+}

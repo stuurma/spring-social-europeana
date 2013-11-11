@@ -1,10 +1,10 @@
-package org.springframework.social.europeana.api.impl;
+package org.springframework.social.europeana.api;
 
 import org.junit.Before;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.social.europeana.api.impl.EuropeanaTemplate;
-import org.springframework.social.test.client.MockRestServiceServer;
+import org.springframework.test.web.client.MockRestServiceServer;
 
 public abstract class AbstractEuropeanaApiTest {
 	protected static final String ACCESS_TOKEN = "someAccessToken";
