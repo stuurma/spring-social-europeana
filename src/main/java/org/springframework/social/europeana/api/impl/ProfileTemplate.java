@@ -1,7 +1,7 @@
 package org.springframework.social.europeana.api.impl;
 
-import org.springframework.social.europeana.api.Profile;
 import org.springframework.social.europeana.api.ProfileOperations;
+import org.springframework.social.europeana.api.model.Profile;
 import org.springframework.web.client.RestTemplate;
 
 public class ProfileTemplate extends AbstractEuropeanaOperations implements ProfileOperations {

@@ -1,9 +1,12 @@
-package org.springframework.social.europeana.api;
+package org.springframework.social.europeana.api.model;
 
 import java.util.Date;
 
+import org.springframework.social.europeana.api.model.abstracts.ApiResponse;
+
 public class Profile extends ApiResponse {
-	
+	private static final long serialVersionUID = 2052571284469816752L;
+
 	private String email;
 
 	private String userName;

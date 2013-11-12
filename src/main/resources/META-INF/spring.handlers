@@ -1,0 +1,1 @@
+http\://www.springframework.org/schema/social/europeana=org.springframework.social.europeana.config.xml.EuropeanaNamespaceHandler

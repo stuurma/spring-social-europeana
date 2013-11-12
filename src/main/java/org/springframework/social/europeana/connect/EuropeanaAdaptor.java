@@ -6,7 +6,7 @@ import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
 import org.springframework.social.connect.UserProfileBuilder;
 import org.springframework.social.europeana.api.Europeana;
-import org.springframework.social.europeana.api.Profile;
+import org.springframework.social.europeana.api.model.Profile;
 
 public class EuropeanaAdaptor implements ApiAdapter<Europeana> {
 

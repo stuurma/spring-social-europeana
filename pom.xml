@@ -27,22 +27,34 @@
 		<url>git@github.com:eLedge/spring-social-europeana.git</url>
 	</scm>
 
+	<properties>
+		<version.springCore>3.2.3.RELEASE</version.springCore>
+		<version.springSocial>1.0.3.RELEASE</version.springSocial>
+		<version.codehausJackson>1.9.9</version.codehausJackson>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.social</groupId>
 			<artifactId>spring-social-core</artifactId>
-			<version>1.0.3.RELEASE</version>
+			<version>${version.springSocial}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-xc</artifactId>
+			<version>${version.codehausJackson}</version>
+		</dependency>
+        <!-- TESTING -->
 		<dependency>
             <groupId>org.springframework.social</groupId>
             <artifactId>spring-social-test</artifactId>
-            <version>1.0.3.RELEASE</version>
+			<version>${version.springSocial}</version>
             <scope>test</scope>
         </dependency>
 		<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>3.2.3.RELEASE</version>
+            <version>${version.springCore}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
