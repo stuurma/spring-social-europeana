@@ -10,20 +10,12 @@ public abstract class AbstractEuropeanaApiTest {
 	protected static final String ACCESS_TOKEN = "someAccessToken";
 
 	protected EuropeanaTemplate europeana;
-	protected EuropeanaTemplate unauthorizedEuropeana;
 	protected MockRestServiceServer mockServer;
-    protected MockRestServiceServer unauthorizedMockServer;
 
 	@Before
 	public void setup() {
-		europeana = createFacebookTemplate();
+		europeana = new EuropeanaTemplate(ACCESS_TOKEN);
 		mockServer = MockRestServiceServer.createServer(europeana.getRestTemplate());
-		unauthorizedEuropeana = new EuropeanaTemplate();
-		unauthorizedMockServer = MockRestServiceServer.createServer(unauthorizedEuropeana.getRestTemplate());
-	}
-
-	protected EuropeanaTemplate createFacebookTemplate() {
-		return new EuropeanaTemplate(ACCESS_TOKEN);
 	}
 
 	protected Resource jsonResource(String filename) {
