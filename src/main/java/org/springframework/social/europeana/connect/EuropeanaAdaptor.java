@@ -22,8 +22,9 @@ public class EuropeanaAdaptor implements ApiAdapter<Europeana> {
 
 	@Override
 	public void setConnectionValues(Europeana europeana, ConnectionValues values) {
-		// TODO Auto-generated method stub
-		
+		Profile profile = europeana.profileOperations().getProfile();
+		values.setProviderUserId(profile.getEmail());
+		values.setDisplayName(profile.getUserName());
 	}
 
 	@Override

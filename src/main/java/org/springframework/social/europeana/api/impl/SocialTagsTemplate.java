@@ -17,6 +17,18 @@ public class SocialTagsTemplate extends AbstractEuropeanaOperations implements S
 		requireUserAuthorization();
 		return restTemplate.getForObject(buildUri("tag.json"), TagResults.class);
 	}
+
+	@Override
+	public TagResults getSocialTagsByEuropeanaId(String europeanaId) {
+		requireUserAuthorization();
+		return restTemplate.getForObject(buildUri("tag.json?europeanaid="+europeanaId), TagResults.class);
+	}
+
+	@Override
+	public TagResults getSocialTagsByTag(String tag) {
+		requireUserAuthorization();
+		return restTemplate.getForObject(buildUri("tag.json?tag="+tag), TagResults.class);
+	}
 	
 	@Override
 	public TagCloudResults getSocialTagCloud() {
@@ -27,7 +39,25 @@ public class SocialTagsTemplate extends AbstractEuropeanaOperations implements S
 	@Override
 	public UserModification saveSocialTag(String europeanaId, String tag) {
 		requireUserAuthorization();
-		return restTemplate.postForEntity("tag.json?europeanaid"+europeanaId+"&tag="+tag, null, UserModification.class).getBody();
+		return restTemplate.postForEntity(buildUri("tag.json?europeanaid"+europeanaId+"&tag="+tag), null, UserModification.class).getBody();
+	}
+
+	@Override
+	public void deleteByTagId(Long tagId) {
+		requireUserAuthorization();
+		restTemplate.delete(buildUri("tag.json?tagid="+tagId));
+	}
+
+	@Override
+	public void deleteByEuropeanaId(String europeanaId) {
+		requireUserAuthorization();
+		restTemplate.delete(buildUri("tag.json?europeanaid="+europeanaId));
+	}
+
+	@Override
+	public void deleteByTag(String tag) {
+		requireUserAuthorization();
+		restTemplate.delete(buildUri("tag.json?tag="+tag));
 	}
 
 }

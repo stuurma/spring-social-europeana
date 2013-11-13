@@ -8,8 +8,18 @@ public interface SocialTagsOperations {
 	
 	TagResults getSocialTags();
 	
+	TagResults getSocialTagsByEuropeanaId(String europeanaId);
+
+	TagResults getSocialTagsByTag(String tag);
+	
 	TagCloudResults getSocialTagCloud();
 	
 	UserModification saveSocialTag(String europeanaId, String tag);
+	
+	void deleteByTagId(Long tagId);
+	
+	void deleteByEuropeanaId(String europeanaId);
+	
+	void deleteByTag(String tag);
 
 }
