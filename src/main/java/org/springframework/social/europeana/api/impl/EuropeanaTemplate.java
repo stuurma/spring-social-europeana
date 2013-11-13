@@ -24,18 +24,22 @@ public class EuropeanaTemplate extends AbstractOAuth2ApiBinding implements Europ
 		initSubApis();
 	}
 
+	@Override
 	public ProfileOperations profileOperations() {
 		return profileOperations;
 	}
 
+	@Override
 	public SavedItemsOperations savedItemsOperations() {
 		return savedItemsOperations;
 	}
 
+	@Override
 	public SavedSearchesOperations savedSearchesOperations() {
 		return savedSearchesOperations;
 	}
 
+	@Override
 	public SocialTagsOperations socialTagsOperations() {
 		return socialTagsOperations;
 	}

@@ -10,6 +10,7 @@ import org.springframework.social.europeana.api.model.Profile;
 
 public class EuropeanaAdaptor implements ApiAdapter<Europeana> {
 
+	@Override
 	public boolean test(Europeana europeana) {
 		try {
 			europeana.profileOperations().getProfile();
@@ -19,16 +20,19 @@ public class EuropeanaAdaptor implements ApiAdapter<Europeana> {
         }
 	}
 
+	@Override
 	public void setConnectionValues(Europeana europeana, ConnectionValues values) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	@Override
 	public UserProfile fetchUserProfile(Europeana europeana) {
 		Profile profile = europeana.profileOperations().getProfile();
 		return new UserProfileBuilder().setName(profile.getEmail()).setUsername(profile.getUserName()).build();
 	}
 
+	@Override
 	public void updateStatus(Europeana api, String message) {
 		// ignore, not supported by Europeana API
 	}

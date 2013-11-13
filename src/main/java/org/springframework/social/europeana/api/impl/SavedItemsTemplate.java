@@ -10,6 +10,7 @@ public class SavedItemsTemplate extends AbstractEuropeanaOperations implements S
 		super(restTemplate, isAuthorized);
 	}
 	
+	@Override
 	public SavedItemResults getSavedItems() {
 		requireUserAuthorization();
 		return restTemplate.getForObject(buildUri("saveditem.json"), SavedItemResults.class);

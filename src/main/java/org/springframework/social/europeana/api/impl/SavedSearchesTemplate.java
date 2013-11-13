@@ -10,6 +10,7 @@ public class SavedSearchesTemplate extends AbstractEuropeanaOperations implement
 		super(restTemplate, isAuthorized);
 	}
 	
+	@Override
 	public SavedSearchResults getSavedSearches() {
 		requireUserAuthorization();
 		return restTemplate.getForObject(buildUri("savedsearch.json"), SavedSearchResults.class);

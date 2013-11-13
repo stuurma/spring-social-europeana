@@ -10,6 +10,7 @@ public class ProfileTemplate extends AbstractEuropeanaOperations implements Prof
 		super(restTemplate, isAuthorized);
 	}
 	
+	@Override
 	public Profile getProfile() {
 		requireUserAuthorization();
 		return restTemplate.getForObject(buildUri("profile.json"), Profile.class);

@@ -2,6 +2,9 @@ package org.springframework.social.europeana.api.model.abstracts;
 
 import java.io.Serializable;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
 public abstract class ApiResponse implements Serializable {
 	private static final long serialVersionUID = -1144141526716028555L;
 
