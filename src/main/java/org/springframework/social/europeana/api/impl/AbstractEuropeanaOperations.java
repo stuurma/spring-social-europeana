@@ -32,9 +32,7 @@ public abstract class AbstractEuropeanaOperations {
 	}
 
 	protected URI buildUri(String path, String parameterName, String parameterValue) {
-		MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
-		parameters.set(parameterName, parameterValue);
-		return buildUri(path, parameters);
+		return URIBuilder.fromUri(API_URL_BASE + path).queryParam(parameterName, parameterValue).build();
 	}
 
 	protected URI buildUri(String path, MultiValueMap<String, String> parameters) {

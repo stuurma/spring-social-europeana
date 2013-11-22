@@ -10,7 +10,7 @@
 
 	<groupId>net.eledge</groupId>
 	<artifactId>spring-social-europeana</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>spring-social-europeana</name>
 	<packaging>jar</packaging>
 	<url>https://github.com/eLedge/spring-social-europeana</url>

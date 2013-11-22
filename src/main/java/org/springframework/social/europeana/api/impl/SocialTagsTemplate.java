@@ -39,7 +39,7 @@ public class SocialTagsTemplate extends AbstractEuropeanaOperations implements S
 	@Override
 	public UserModification saveSocialTag(String europeanaId, String tag) {
 		requireUserAuthorization();
-		return restTemplate.postForEntity(buildUri("tag.json?europeanaid"+europeanaId+"&tag="+tag), null, UserModification.class).getBody();
+		return restTemplate.postForEntity(buildUri("tag.json?europeanaid="+europeanaId+"&tag="+tag), null, UserModification.class).getBody();
 	}
 
 	@Override

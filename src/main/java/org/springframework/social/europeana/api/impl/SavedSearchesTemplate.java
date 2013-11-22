@@ -31,7 +31,7 @@ public class SavedSearchesTemplate extends AbstractEuropeanaOperations implement
 			}
 		}
 		if (start != null) {
-			sb.append("start=").append(start);
+			sb.append("&start=").append(start);
 		}
 		return restTemplate.postForEntity(buildUri(sb.toString()), null, UserModification.class).getBody();
 	}
