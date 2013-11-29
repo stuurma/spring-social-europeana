@@ -2,6 +2,27 @@
 
 This project has the goal to provide a Europeana.eu API v2 Service Provider for Spring Social.
 
+## Test in your project
+As there is no official release yet, you have to use a snapshot release.
+Add the repository to your pom.xml or settings.xml
+```xml
+<repository>
+	<id>wicketstuff-core-snapshots</id>
+	<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	<snapshots>
+		<enabled>true</enabled>
+	</snapshots>
+</repository>
+```
+Add the dependecy to your project:
+```xml
+<dependency>
+	<groupId>net.eledge</groupId>
+	<artifactId>spring-social-europeana</artifactId>
+	<version>0.0.4-SNAPSHOT</version>
+</dependency>
+```
+
 ## Contributing to this project
 As this is an Open Source project, all contributions/suggestions are welcome.
 You can contribute in several ways.
