@@ -43,7 +43,7 @@
 
 	<properties>
 		<version.springCore>3.2.3.RELEASE</version.springCore>
-		<version.springSocial>1.0.3.RELEASE</version.springSocial>
+		<version.springSocial>1.1.0.RELEASE</version.springSocial>
 		<version.codehausJackson>1.9.9</version.codehausJackson>
 		<version.jdk>1.6</version.jdk>
 	</properties>
@@ -60,12 +60,6 @@
 			<version>${version.codehausJackson}</version>
 		</dependency>
 		<!-- TESTING -->
-		<dependency>
-			<groupId>org.springframework.social</groupId>
-			<artifactId>spring-social-test</artifactId>
-			<version>${version.springSocial}</version>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
