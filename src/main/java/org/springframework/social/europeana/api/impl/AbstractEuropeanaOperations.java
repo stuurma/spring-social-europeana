@@ -23,7 +23,7 @@ public abstract class AbstractEuropeanaOperations {
 
 	protected void requireUserAuthorization() {
 		if (!isAuthorized) {
-			throw new MissingAuthorizationException();
+			throw new MissingAuthorizationException("europeana");
 		}
 	}
 

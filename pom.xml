@@ -42,7 +42,7 @@
 	</scm>
 
 	<properties>
-		<version.springCore>3.2.3.RELEASE</version.springCore>
+		<version.springCore>4.0.3.RELEASE</version.springCore>
 		<version.springSocial>1.1.0.RELEASE</version.springSocial>
 		<version.codehausJackson>1.9.9</version.codehausJackson>
 		<version.jdk>1.6</version.jdk>
