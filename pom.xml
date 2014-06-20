@@ -44,7 +44,7 @@
 	<properties>
 		<version.springCore>4.0.3.RELEASE</version.springCore>
 		<version.springSocial>1.1.0.RELEASE</version.springSocial>
-		<version.codehausJackson>1.9.9</version.codehausJackson>
+		<version.fasterxmlJackson>2.4.0</version.fasterxmlJackson>
 		<version.jdk>1.6</version.jdk>
 	</properties>
 
@@ -55,9 +55,19 @@
 			<version>${version.springSocial}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-xc</artifactId>
-			<version>${version.codehausJackson}</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${version.fasterxmlJackson}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${version.fasterxmlJackson}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${version.fasterxmlJackson}</version>
 		</dependency>
 		<!-- TESTING -->
 		<dependency>

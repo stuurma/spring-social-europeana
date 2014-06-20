@@ -19,13 +19,15 @@ package org.springframework.social.europeana.api.model;
 
 import java.util.Date;
 
-import org.codehaus.jackson.map.annotate.JsonSerialize;
-import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 /**
  * @author Willem-Jan Boogerd <www.eledge.net/contact>
  */
-@JsonSerialize(include = Inclusion.NON_EMPTY)
+@JsonSerialize
+@JsonInclude(Include.NON_EMPTY)
 public class SavedSearch {
 
 	public Long id;

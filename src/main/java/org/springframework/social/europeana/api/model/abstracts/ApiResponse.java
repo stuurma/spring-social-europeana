@@ -2,7 +2,7 @@ package org.springframework.social.europeana.api.model.abstracts;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 public abstract class ApiResponse implements Serializable {
