@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public abstract class AbstractEuropeanaOperations {
 
 	private static final LinkedMultiValueMap<String, String> EMPTY_PARAMETERS = new LinkedMultiValueMap<String, String>();
-	public static final String API_URL_BASE = "http://europeana.eu/api/v2/user/";
+	public static final String API_URL_BASE = "http://europeana.eu/api/user/";
 	
 	private final boolean isAuthorized;
 	protected final RestTemplate restTemplate;
