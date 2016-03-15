@@ -13,7 +13,7 @@ public class ProfileTemplate extends AbstractEuropeanaOperations implements Prof
 	@Override
 	public Profile getProfile() {
 		requireUserAuthorization();
-		return restTemplate.getForObject(buildUri("profile.json"), Profile.class);
+		return restTemplate.getForObject(buildUri("profile"), Profile.class);
 	}
 
 }
