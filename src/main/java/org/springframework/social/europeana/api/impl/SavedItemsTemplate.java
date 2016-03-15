@@ -14,31 +14,31 @@ public class SavedItemsTemplate extends AbstractEuropeanaOperations implements S
 	@Override
 	public SavedItemResults getSavedItems() {
 		requireUserAuthorization();
-		return restTemplate.getForObject(buildUri("saveditem.json"), SavedItemResults.class);
+		return restTemplate.getForObject(buildUri("saveditem"), SavedItemResults.class);
 	}
 
 	@Override
 	public SavedItemResults getSavedItemByEuropeanaId(String europeanaId) {
 		requireUserAuthorization();
-		return restTemplate.getForObject(buildUri("saveditem.json?europeanaid="+europeanaId), SavedItemResults.class);
+		return restTemplate.getForObject(buildUri("saveditem/"+europeanaId), SavedItemResults.class);
 	}
 
 	@Override
 	public UserModification saveItem(String europeanaId) {
 		requireUserAuthorization();
-		return restTemplate.postForEntity(buildUri("saveditem.json?europeanaid="+europeanaId), null, UserModification.class).getBody();
+		return restTemplate.postForEntity(buildUri("saveditem/"+europeanaId), null, UserModification.class).getBody();
 	}
 
 	@Override
 	public void deleteBySavedItemId(Long itemId) {
 		requireUserAuthorization();
-		restTemplate.delete(buildUri("saveditem.json?itemid="+itemId));
+		restTemplate.delete(buildUri("saveditem/"+itemId));
 	}
 
 	@Override
 	public void deleteByEuropeanaId(String europeanaId) {
 		requireUserAuthorization();
-		restTemplate.delete(buildUri("saveditem.json?europeanaid="+europeanaId));
+		restTemplate.delete(buildUri("saveditem/"+europeanaId));
 	}
 
 }
