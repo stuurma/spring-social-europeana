@@ -15,13 +15,13 @@ public class SavedSearchesTemplate extends AbstractEuropeanaOperations implement
 	@Override
 	public SavedSearchResults getSavedSearches() {
 		requireUserAuthorization();
-		return restTemplate.getForObject(buildUri("savedsearch.json"), SavedSearchResults.class);
+		return restTemplate.getForObject(buildUri("savedsearch"), SavedSearchResults.class);
 	}
 
 	@Override
 	public UserModification addSavedSearch(String query, String[] refinements, Long start) {
 		requireUserAuthorization();
-		StringBuilder sb = new StringBuilder("savedsearch.json?query=");
+		StringBuilder sb = new StringBuilder("savedsearch?query=");
 		sb.append(query);
 		if ((refinements != null) && (refinements.length > 0)) {
 			for (String qf : refinements) {
@@ -39,7 +39,7 @@ public class SavedSearchesTemplate extends AbstractEuropeanaOperations implement
 	@Override
 	public void deleteBySavedSearchId(Long searchId) {
 		requireUserAuthorization();
-		restTemplate.delete(buildUri("savedsearch.json?searchid="+searchId));
+		restTemplate.delete(buildUri("savedsearch/"+searchId));
 	}
 
 }
