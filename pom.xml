@@ -42,9 +42,9 @@
 	</scm>
 
 	<properties>
-		<version.springCore>4.0.3.RELEASE</version.springCore>
-		<version.springSocial>1.1.0.RELEASE</version.springSocial>
-		<version.fasterxmlJackson>2.4.0</version.fasterxmlJackson>
+		<version.springCore>4.1.8.RELEASE</version.springCore>
+		<version.springSocial>1.1.4.RELEASE</version.springSocial>
+		<version.fasterxmlJackson>2.6.4</version.fasterxmlJackson>
 		<version.jdk>1.6</version.jdk>
 	</properties>
 
